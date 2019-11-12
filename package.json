@@ -2,6 +2,7 @@
   "name": "react-routes",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://morbargig.github.io/wizards",
   "dependencies": {
     "bluebird": "^3.5.1",
     "jest-cli": "^23.4.2",
@@ -17,14 +18,17 @@
     "babel-plugin-transform-class-properties": "^6.24.1",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
+    "gh-pages": "^2.1.1",
     "jest": "^23.4.2",
     "jest-emotion": "^10.0.10",
-    "jest-test-runner": "git+https://github.com/Elevationacademy/jest-test-runner.git",
     "jest-expect-message": "github:Elevationacademy/jest-expect-message",
+    "jest-test-runner": "git+https://github.com/Elevationacademy/jest-test-runner.git",
     "jest-transform-stub": "^1.0.0",
     "react-test-renderer": "^16.4.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
